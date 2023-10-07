@@ -7,33 +7,36 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1>FreeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
 
     <!-- the form  -->
-    <form action="" method="post">
+    <form id="survey-form" action="" method="post">
       <fieldset>
-        <label for=""> <input type="text" /></label>
-        <label for=""> <input type="text" /></label>
-        <label for=""> <input type="text" /></label>
-        <label for="">
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </label>
-      </fieldset>
-      <fieldset>
-        <label for=""><input type="radio" name="" id="" /></label>
-        <label for=""><input type="radio" name="" id="" /></label>
-        <label for=""><input type="radio" name="" id="" /></label>
-      </fieldset>
-      <fieldset>
-        <select name="" id="">
+        <label id="name-label" for="name">
+          Name<input
+            id="name"
+            type="text"
+            required
+            placeholder="Enter your name"
+        /></label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Enter your Email"
+        /></label>
+        <label id="number-label" for="age"
+          >Age (optional)
+          <input id="number" type="number" min="12" max="25" placeholder="Age"
+        /></label>
+        <label for=""> Which option best describes your current role?</label>
+        <select id="dropdown" name="" id="">
+          <option value=""></option>
           <option value=""></option>
           <option value=""></option>
           <option value=""></option>
@@ -42,21 +45,114 @@
         </select>
       </fieldset>
       <fieldset>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
-        <label for=""><input type="checkbox" name="" id="" /></label>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for=""
+          ><input type="radio" name="definitely" id="" />Definitely</label
+        >
+        <label for=""><input type="radio" name="maybe" id="" />Maybe</label>
+        <label for=""
+          ><input type="radio" name="not-sure" id="" />Not sure</label
+        >
       </fieldset>
       <fieldset>
-        <label for=""><input type="textarea" name="" id="" /></label>
+        <label for="favorite"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select name="favorite" id="">
+          <option value="0">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="">Projects</option>
+          <option value="">Community</option>
+          <option value="">Open Source</option>
+        </select>
       </fieldset>
+      <fieldset>
+        <label for=""
+          ><input
+            type="checkbox"
+            name=""
+            value="frontend-projects"
+            id=""
+          />Front-end Projects</label
+        >
+        <label for=""
+          ><input
+            type="checkbox"
+            name=""
+            value="backend-projects"
+            id=""
+          />Back-end Projects</label
+        >
+        <label for=""
+          ><input
+            type="checkbox"
+            name=""
+            value="data-visualization"
+            id=""
+          />Data Visualization</label
+        >
+        <label for=""
+          ><input
+            type="checkbox"
+            name=""
+            value="challenges"
+            id=""
+          />Challenges</label
+        >
+        <label for=""
+          ><input
+            type="checkbox"
+            name=""
+            value="open-source-community"
+            id=""
+          />Open Source Community</label
+        >
+        <label for="gitter-help-rooms"
+          ><input
+            type="checkbox"
+            name="gitter-help-rooms"
+            value="gitter-help-rooms"
+            id=""
+          />Gitter help rooms</label
+        >
+        <label for="videos"
+          ><input
+            type="checkbox"
+            name="videos"
+            value="videos"
+            id=""
+          />Videos</label
+        >
+        <label for=""
+          ><input type="checkbox" name="" value="city-meetups" id="" />City
+          Meetups</label
+        >
+        <label for=""
+          ><input type="checkbox" name="" value="wiki" id="" />Wiki</label
+        >
+        <label for=""
+          ><input type="checkbox" name="" value="forum" id="" />Forum</label
+        >
+        <label for=""
+          ><input
+            type="checkbox"
+            name=""
+            value="additional-courses"
+            id=""
+          />Additional Courses</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for=""
+          >Any comments or suggestions?<input
+            type="textarea"
+            cols="10"
+            rows="5"
+            name="suggestions"
+            id=""
+        /></label>
+      </fieldset>
+      <input type="submit" value="submit" />
     </form>
   </body>
 </html>
