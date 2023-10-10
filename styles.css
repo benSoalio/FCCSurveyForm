@@ -1,0 +1,63 @@
+body {
+    background-color: rgba(58, 58, 158, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+}
+ #label-name, #label-email, #label-age {
+  display: block;
+ }
+ #survey-form {
+   width: 600px;
+   margin: 50PX auto;
+   padding: 10px;
+   text-align: left;
+   background-color: rgb(58, 7, 106);
+ }
+
+#title, #description {
+    text-align: center;
+    margin: 0 auto;
+}
+
+label, div > p {
+  color: aliceblue;
+  display: block;
+  padding: 10px 0 5px 0;
+}
+
+
+
+.form-group {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+}
+
+input[type=text], input[type=email], input[type=number], textarea, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  
+  color: rgb(234, 11, 11);
+  width: 500px;
+  padding: 12px 20px;
+  margin:  10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
+
+
